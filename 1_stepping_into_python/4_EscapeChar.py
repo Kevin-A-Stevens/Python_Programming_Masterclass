@@ -32,3 +32,8 @@ split over \
 several \
 lines"""
 print(anotherWaySplitString)
+
+# including the \ character in strings
+print("C:\\Users\\tim\\notes.txt")
+print(r"C:\Users\tim\notes.txt")
+
