@@ -1,5 +1,13 @@
 """
 deleting an item from a list
+
+functions used
+range()
+len()
+print()
+enumerate()
+reversed() = returns a reversed iterator (lets us use enumerate)
+
 """
 data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
         160, 170, 183, 185, 187, 188, 191, 350, 360]
@@ -56,6 +64,20 @@ for index in range(len(data) -1, -1, -1):
                 del data[index]
 
 print(data)
+
+# reversed function
+print()
+data = [104, 101, 4, 105, 308, 103, 5,
+           107, 100, 306, 106, 102, 108]
+
+top_index = len(data) - 1
+for index, value in enumerate(reversed(data)):
+        if value < min_valid or value > max_valid:
+                print(top_index - index, value)
+                del data[top_index - index]
+
+print(data)
+
 
 
 
