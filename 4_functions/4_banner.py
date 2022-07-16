@@ -7,6 +7,9 @@ performs an action but does not return anything
 handling invalid arguments with raise ValueError
 (raise ExceptionType)
 
+Setting default values
+If not specified, the default value is used
+
 functions used
 print()
 len()
@@ -17,7 +20,7 @@ methods used
 """
 
 
-def banner_text(text, screen_width):
+def banner_text(text, screen_width=80):
     if len(text) > screen_width - 4:
         raise ValueError("String {0} is larger than specified width {1}"
                          .format(text, screen_width))
