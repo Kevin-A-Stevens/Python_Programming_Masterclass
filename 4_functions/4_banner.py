@@ -20,7 +20,15 @@ methods used
 """
 
 
-def banner_text(text=" ", screen_width=80):
+def banner_text(text: str = " ", screen_width: int = 80) -> None:
+    """
+    Print a string centered, with ** either side.
+
+    :param text: The string to print
+    :param screen_width: The width to print within
+    :raises ValueError: if the supplied string is too
+        long to fit.
+    """
     if len(text) > screen_width - 4:
         raise ValueError("String {0} is larger than specified width {1}"
                          .format(text, screen_width))
