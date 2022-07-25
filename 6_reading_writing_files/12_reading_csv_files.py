@@ -1,6 +1,9 @@
 """
 Reading a csv file
 
+functions used
+print()
+
 methods used
 .reader()
 """
