@@ -12,3 +12,4 @@ def print_backwards(*args, **kwargs):
 with open("backwards.txt", "w") as backwards:
     print_backwards("hello", "planet", "earth", file=backwards)
 
+print_backwards("hello", "planet", "earth")
