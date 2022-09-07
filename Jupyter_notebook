@@ -1,0 +1,10 @@
+|17:53:36|kevinstevens@system76-pc:[tmp]> source ~/anaconda3/bin/activate root
+(base) |17:53:53|kevinstevens@system76-pc:[tmp]> anaconda-navigator
+cd programming/python/Python_Master_Class
+jupyter notebook
+
+Shift-Enter - runs the cell
+Alt Enter - inputs a new cell
+File > Download As  = downloads as a .py or .pynpb file
+Code > Markdown - converts to markdown (comment)
+
